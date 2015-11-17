@@ -1,0 +1,103 @@
+//general text styling
+h1, h2 {
+  font-family: "Journal", Helvetica, sans-serif;
+}
+p,
+a,
+label,
+h3,
+h4 {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  line-height: 1.25em;
+}
+
+//styling basic site layout components
+.hero {
+  background-image: url("../../img/canyon.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  @media screen and (min-width: $med-screen){
+    background-image: url("../../img/canyon-full.jpg");
+    background-size: cover;
+  }
+}
+#section2, #section4 {
+  background-color: $faded-bgdcolor1;
+}
+.hero h1{
+  font-size: 5em;
+  padding-top: 3em;
+  @media screen and (min-width: $med-screen){
+    font-size: 8em;
+  }
+}
+
+//navigation theme styles
+a.menu-link.active,
+nav a.active {
+  color: $text-coloractive;
+}
+a.menu-link {
+  background-color: $overlay;
+}
+  nav[role=navigation] {
+  background-color: $overlay;
+  }
+  nav[role=navigation] ul {
+    border-top: 1px solid $navborder-color;
+  }
+  nav[role=navigation] li a {
+    border-bottom: 1px solid $navborder-color;
+  }
+
+// garage door
+.garage-card .garage-text {
+  background-color: $garage-cardcolor;
+  opacity: 0.8;
+  color: $text-colorlight;
+}
+.garage-card:before,
+.flip-front:before {
+  background: $overlay;
+  color: $text-colordark;
+}
+
+// buttons and forms
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  color: $text-colordark;
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: 1px solid $bgdcolor1;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: $text-colordark;
+  border-color: $form-border-active;
+  outline: 0;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"],
+textarea {
+  background-color: #fff;
+  border: 1px solid $bgdcolor1;
+  border-radius: 0.5em;
+}
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus{
+  border: 1px solid $form-border-active;
+  outline: 0;
+}

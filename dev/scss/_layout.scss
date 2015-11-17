@@ -1,0 +1,153 @@
+//general page structure
+.hero {
+  text-align: center;
+  height: 35em;
+  @media screen and (min-width: $med-screen){
+    height: 60em;
+  }
+}
+.stripe {
+  min-height: 45em;
+  padding: 2em 1em;
+}
+
+//layout utility styles
+.justify {
+  text-align: justify;
+}
+.vertical-ctr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 100%;
+}
+.align-top {
+  vertical-align: top;
+}
+
+// navigation
+// based on http://codepen.io/bradfrost/pen/sHvaz
+a.menu-link {
+  display: block;
+  padding: 1em;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+  nav[role=navigation] {
+    clear: both;
+    position: fixed;
+    top: 3em;
+    z-index: 1;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .js nav[role=navigation] {
+    overflow: hidden;
+    max-height: 0;
+  }
+  nav[role=navigation].active {
+    max-height: 15em;
+  }
+  nav[role=navigation] ul {
+    margin: 0;
+    padding: 0;
+  }
+  nav[role=navigation] li a {
+    display: block;
+    padding: 0.8em;
+  }
+
+  @media screen and (min-width: $med-screen) {
+    a.menu-link {
+       display: none;
+    }
+    .js nav[role=navigation] {
+      max-height: none;
+      top: 0;
+    }
+    nav[role=navigation] ul {
+      margin: 0 0 0 -0.25em;
+      border: 0;
+    }
+    nav[role=navigation]  li {
+      display: inline-block;
+      margin: 0 0.25em;
+    }
+    nav[role=navigation] li a {
+      border: 0;
+    }
+  }
+
+//garage doors
+.garage-card {
+  position: relative;
+  overflow: hidden;
+}
+.garage-card .garage-text {
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+.garage-card:before,
+.flip-front:before {
+  content: "?";
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-border-radius: .75em;
+  -moz-border-radius:    .75em;
+  border-radius:         .75em;
+  text-align: center;
+  line-height: 1.5em;
+  top: 0.625em;
+  right: 0.625em;
+}
+
+//buttons and forms
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: block;
+  height: 2.5em;
+  padding: 0 2em;
+  text-align: center;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  width: 100%;
+  max-width: 14em;
+  margin-bottom: 1em;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  height: 3em;
+  width: 100%;
+  max-width: 28em;
+  margin-bottom: 1em;
+}
+textarea {
+  height: 21em;
+  width: 100%;
+  max-width: 50em;
+  margin-bottom: 1em;
+}
+label,
+legend {
+  display: block;
+  margin-bottom: 0.25em;
+}
+p.forgot {
+  position: relative;
+  top: -0.75em;
+}
