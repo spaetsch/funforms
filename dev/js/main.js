@@ -20,32 +20,19 @@ $(document).ready(function() {
     return false;
   });
 
-  // based on http://codepen.io/markhillard/pen/iqnlh/
-  // bind click event to only internal page anchors inside nav
-  $("nav a[href*=#]").bind("click", function(e) {
-      // prevent default action and bubbling
-      e.preventDefault();
-      e.stopPropagation();
-      // set target to anchor's "href" attribute
-      var target = $(this).attr("href");
-      // scroll to each target
-      $(target).velocity("scroll", {
-          duration: 500,
-          offset: -40,
-          easing: "ease-in-out"
-      });
+  //JS slow scroll to target
+  var $linkToAnchor = $('nav a[href^=#]');
+
+  $linkToAnchor.click( function(event) {
+
+    var target = $($(this).attr("href"));
+    console.log("target: ", target);
+
+    if( target.length ) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: target.offset().top
+      }, 800);
+    }
   });
-
-  $("captionjs").bind("hover", function(e) {
-      // prevent default action and bubbling
-      e.preventDefault();
-      e.stopPropagation();
-      // set target to anchor's "href" attribute
-      var target = $(this).attr("captionjs");
-      // scroll to each target
-      $(target).velocity({ width: 50 }, "easeInSine");
-  });
-
-
-
 });
