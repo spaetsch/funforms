@@ -269,7 +269,7 @@ h4 {
   background-size: cover; }
 
 #section2, #section4 {
-  background-color: rgba(164, 165, 99, 0.2); }
+  background-color: rgba(113, 83, 103, 0.2); }
 
 .hero h1 {
   font-size: 5em;
@@ -294,16 +294,6 @@ nav[role=navigation] ul {
 nav[role=navigation] li a {
   border-bottom: 1px solid #808080; }
 
-.garage-card .garage-text {
-  background-color: #006600;
-  opacity: 0.8;
-  color: white; }
-
-.garage-card:before,
-.flip-front:before {
-  background: rgba(248, 246, 246, 0.7);
-  color: black; }
-
 button,
 input[type="submit"],
 input[type="reset"],
@@ -311,7 +301,7 @@ input[type="button"] {
   color: black;
   background-color: transparent;
   border-radius: 0.5em;
-  border: 1px solid #a4a563; }
+  border: 1px solid #715367; }
 
 button:hover,
 input[type="submit"]:hover,
@@ -331,7 +321,7 @@ input[type="text"],
 input[type="password"],
 textarea {
   background-color: #fff;
-  border: 1px solid #a4a563;
+  border: 1px solid #715367;
   border-radius: 0.5em; }
 
 input[type="email"]:focus,

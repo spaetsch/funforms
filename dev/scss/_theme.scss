@@ -48,18 +48,6 @@ a.menu-link {
     border-bottom: 1px solid $navborder-color;
   }
 
-// garage door
-.garage-card .garage-text {
-  background-color: $garage-cardcolor;
-  opacity: 0.8;
-  color: $text-colorlight;
-}
-.garage-card:before,
-.flip-front:before {
-  background: $overlay;
-  color: $text-colordark;
-}
-
 // buttons and forms
 button,
 input[type="submit"],
