@@ -251,25 +251,22 @@ p.forgot {
   top: -0.75em; }
 
 h1, h2 {
-  font-family: "Journal", Helvetica, sans-serif; }
+  font-family: "Bitter", Times, serif; }
 
 p,
 a,
 label,
 h3,
 h4 {
-  font-family: "Quicksand", Helvetica, sans-serif;
+  font-family: "Colaborate", Helvetica, sans-serif;
   line-height: 1.25em; }
 
 .hero {
-  background-image: url("../../img/canyon.jpg");
+  background-image: url("../../img/background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center top; }
-  @media screen and (min-width: 45em) {
-    .hero {
-      background-image: url("../../img/canyon-full.jpg");
-      background-size: cover; } }
+  background-position: center center;
+  background-size: cover; }
 
 #section2, #section4 {
   background-color: rgba(164, 165, 99, 0.2); }
@@ -353,5 +350,29 @@ textarea:focus {
 @font-face {
   font-family: 'Quicksand';
   src: url("../../fonts/quicksand/Quicksand-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bitter';
+  src: url("../../fonts/bitter/Bitter-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bitter';
+  src: url("../../fonts/bitter/Bitter-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Colaborate';
+  src: url("../../fonts/colaborate/ColabReg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Colaborate';
+  src: url("../../fonts/colaborate/ColabBol.otf") format("opentype");
   font-weight: bold;
   font-style: normal; }
