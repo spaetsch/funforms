@@ -115,6 +115,7 @@ h2 {
 
 .hero {
   text-align: center;
+  padding: 2em 1em;
   height: 35em; }
   @media screen and (min-width: 45em) {
     .hero {
@@ -124,9 +125,6 @@ h2 {
   min-height: 45em;
   padding: 2em 1em; }
 
-.justify {
-  text-align: justify; }
-
 .vertical-ctr {
   position: absolute;
   top: 50%;
@@ -134,9 +132,6 @@ h2 {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   width: 100%; }
-
-.align-top {
-  vertical-align: top; }
 
 a.menu-link {
   display: block;
@@ -187,32 +182,6 @@ nav[role=navigation] li a {
   nav[role=navigation] li a {
     border: 0; } }
 
-.garage-card {
-  position: relative;
-  overflow: hidden; }
-
-.garage-card .garage-text {
-  width: 100%;
-  height: 100%;
-  top: -100%;
-  text-align: center;
-  position: absolute;
-  z-index: 1; }
-
-.garage-card:before,
-.flip-front:before {
-  content: "?";
-  position: absolute;
-  width: 1.5em;
-  height: 1.5em;
-  -webkit-border-radius: .75em;
-  -moz-border-radius: .75em;
-  border-radius: .75em;
-  text-align: center;
-  line-height: 1.5em;
-  top: 0.625em;
-  right: 0.625em; }
-
 button,
 input[type="submit"],
 input[type="reset"],
@@ -258,25 +227,26 @@ a,
 label,
 h3,
 h4 {
-  font-family: "Colaborate", Helvetica, sans-serif;
+  font-family: "Lato", Helvetica, sans-serif;
   line-height: 1.25em; }
 
 .hero {
+  padding-top: 10em;
   background-image: url("../../img/background.jpg");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
 
-#section2, #section4 {
-  background-color: rgba(113, 83, 103, 0.2); }
-
 .hero h1 {
-  font-size: 5em;
-  padding-top: 3em; }
+  text-align: left;
+  color: white;
+  font-size: 3em; }
   @media screen and (min-width: 45em) {
     .hero h1 {
-      font-size: 8em; } }
+      font-size: 6em; } }
+
+#section2, #section4 {
+  background-color: rgba(113, 83, 103, 0.2); }
 
 a.menu-link.active,
 nav a.active {
@@ -364,5 +334,17 @@ textarea:focus {
 @font-face {
   font-family: 'Colaborate';
   src: url("../../fonts/colaborate/ColabBol.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../../fonts/lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../../fonts/lato/Lato-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
