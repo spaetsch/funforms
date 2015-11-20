@@ -55,8 +55,8 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  color: $text-colordark;
-  background-color: transparent;
+  color: $text-colorlight;
+  background-color: $button-color;
   border-radius: 0.5em;
   border: 1px solid $bgdcolor1;
 }
@@ -69,8 +69,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: $text-colordark;
-  border-color: $form-border-active;
+  background-color: $button-color-active;
+  border: 2px solid $form-border-active;
   outline: 0;
 }
 input[type="email"],
@@ -85,6 +85,6 @@ input[type="email"]:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus{
-  border: 1px solid $form-border-active;
+  border: 2px solid $form-border-active;
   outline: 0;
 }

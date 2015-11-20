@@ -250,7 +250,7 @@ h4 {
 
 a.menu-link.active,
 nav a.active {
-  color: red; }
+  color: #A43347; }
 
 a.menu-link {
   background-color: rgba(248, 246, 246, 0.7); }
@@ -268,8 +268,8 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  color: black;
-  background-color: transparent;
+  color: white;
+  background-color: #46507B;
   border-radius: 0.5em;
   border: 1px solid #715367; }
 
@@ -282,8 +282,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: black;
-  border-color: blue;
+  background-color: rgba(70, 80, 123, 0.8);
+  border: 2px solid #5E6095;
   outline: 0; }
 
 input[type="email"],
@@ -298,7 +298,7 @@ input[type="email"]:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-  border: 1px solid blue;
+  border: 2px solid #5E6095;
   outline: 0; }
 
 @font-face {
