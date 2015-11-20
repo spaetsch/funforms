@@ -60,15 +60,16 @@ input[type="button"] {
   border-radius: 0.5em;
   border: 1px solid $bgdcolor1;
 }
+
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
+input[type="button"]:hover{
+// .button:focus,
+// button:focus,
+// input[type="submit"]:focus,
+// input[type="reset"]:focus,
+// input[type="button"]:focus {
   background-color: $button-color-active;
   border: 2px solid $form-border-active;
   outline: 0;
