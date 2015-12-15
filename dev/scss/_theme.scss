@@ -89,3 +89,17 @@ textarea:focus{
   border: 2px solid $form-border-active;
   outline: 0;
 }
+// input[type="email"]:invalid,
+// input[type="text"]:invalid,
+// input[type="password"]:invalid,
+// textarea:invalid{
+//   border: 2px solid $form-border-invalid;
+//   outline: 0;
+// }
+
+//.submitted input:invalid + label::after { content: ' ⨉'; }
+.submitted input:invalid  {
+  border: 2px solid $form-border-invalid;
+   outline: 0;
+ }
+
