@@ -36,10 +36,9 @@ $(document).ready(function() {
     }
   });
 
-  $( "form" ).submit(function( event ) {
+  $("form").submit(function(event) {
     var target = $(event.target);
     target.addClass('submitted');
-    console.log("in submit");
     console.log("event.target: ", target);
     event.preventDefault(); // to not reload page so I can see results
   });
