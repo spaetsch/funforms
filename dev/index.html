@@ -30,11 +30,28 @@
     <h1>Search</h1>
     <p>Advanced search forms using only HTML5 attributes.</p>
     <div class="group">
-      <div class="col span_2_of_6">
-<!-- search field + button
-location: radius + name
-available online checkbox
-dropdown for language -->
+      <div class="col span_2_of_6"></div>
+
+      <div class="col span_3_of_6">
+        <label for="search">Name</label>
+        <input type="text" name="search"  autocomplete="off" />
+        <button>Search</button>
+
+        <label for="location">Location:
+        <input type="number"> miles from
+        <input type="text" name="location">
+        </label>
+
+        <label for="avail">Available online: </label>
+        <input type="checkbox" name="avail">
+
+        <label for="lang">Language:</label>
+        <select name="lang">
+          <option value="english">English</option>
+          <option value="spanish">Espanol</option>
+          <option value="french">Francais</option>
+        </select>
+
       <div>
     </div>
   </section>
