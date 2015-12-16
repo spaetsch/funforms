@@ -63,13 +63,15 @@
       <div class="col span_2_of_6"></div>
       <form class="col span_3_of_6">
 
-<!--Survey question 1
-Survey question 2
-Rate us: radio-->
+        <label for="survey1">Questiony question question?</label>
+        <textarea name="survey1" autocomplete="off" ></textarea>
 
-        <label for="contact-msg-input">Anything Else you'd likd us to know:</label>
-        <textarea id="contact-msg" name="contact-msg-input" required autocomplete="off" ></textarea>
-        <button formnovalidate type="submit" id="contact-button">Submit</button>
+        <label for="rate">Rate your service:</label>
+        <input type="range" step="1" min="1" max="5">
+
+        <label for="moreinfo">Anything else you'd like us to know:</label>
+        <textarea name="moreinfo" required autocomplete="off" ></textarea>
+        <button formnovalidate type="submit" id="survey-button">Submit</button>
       </form>
 
     </div>
