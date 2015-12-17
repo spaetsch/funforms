@@ -98,7 +98,9 @@ input[type="button"] {
 }
 input[type="email"],
 input[type="text"],
-input[type="password"] {
+input[type="number"],
+input[type="password"],
+select {
   height: 3em;
   width: 100%;
   max-width: 28em;
