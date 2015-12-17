@@ -36,7 +36,7 @@ $(document).ready(function() {
     }
   });
 
-  $("form").submit(function(event) {
+  $(".contact").submit(function(event) {
     var target = $(event.target);
     target.addClass('submitted');
     console.log("event.target: ", target);

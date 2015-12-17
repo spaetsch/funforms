@@ -6,9 +6,16 @@ p,
 a,
 label,
 h3,
-h4 {
+h4,
+input[type="text"],
+select {
   font-family: "Lato", Helvetica, sans-serif;
   line-height: 1.25em;
+}
+input[type="text"],
+select,
+button {
+  font-size: 1em;
 }
 
 //styling basic site layout components

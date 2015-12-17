@@ -32,11 +32,11 @@
     <div class="group">
       <div class="col span_2_of_6"></div>
 
-      <div class="col span_3_of_6">
+      <form class="col span_3_of_6">
 
         <label for="search">Search
-          <input type="text" name="search"  autocomplete="off" />
-          <button class="search-btn">Search</button>
+          <input type="text" name="search" required autocomplete="off" />
+          <button type="submit" class="search-btn">Go!</button>
         </label>
 
         <label for="location">Location:
@@ -62,7 +62,7 @@
           </select>
         </label>
 
-      <div>
+      </form>
     </div>
   </section>
 
@@ -92,7 +92,7 @@
     <p>Contact/Tech support form providing feedback with font icons.</p>
     <div class="group">
       <div class="col span_2_of_6"></div>
-      <form class="col span_3_of_6">
+      <form class="col span_3_of_6 contact">
         <label for="contactname-input">Name</label>
         <input type="text" id="contactname" name="contactname-input" required autocomplete="off" />
         <label for="contact-email-input">Email Address</label>
