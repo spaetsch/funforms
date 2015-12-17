@@ -33,24 +33,34 @@
       <div class="col span_2_of_6"></div>
 
       <div class="col span_3_of_6">
-        <label for="search">Search</label>
-        <input type="text" name="search"  autocomplete="off" />
-        <button>Search</button>
 
-        <label for="location">Location:
-        <input type="number"> miles from
-        <input type="text" name="location">
+        <label for="search">Search
+          <input type="text" name="search"  autocomplete="off" />
+          <button class="search-btn">Search</button>
         </label>
 
-        <label for="avail">Available online: </label>
-        <input type="checkbox" name="avail">
+        <label for="location">Location:
+          <select name="miles">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+          miles from
+          <input type="text" name="location" placeholder="City, State">
+        </label>
 
-        <label for="lang">Language:</label>
-        <select name="lang">
-          <option value="english">English</option>
-          <option value="spanish">Espanol</option>
-          <option value="french">Francais</option>
-        </select>
+        <label for="avail">Available online:
+          <input type="checkbox" name="avail">
+        </label>
+
+        <label for="lang">Language:
+          <select name="lang">
+            <option value="english">English</option>
+            <option value="spanish">Espanol</option>
+            <option value="french">Francais</option>
+          </select>
+        </label>
 
       <div>
     </div>

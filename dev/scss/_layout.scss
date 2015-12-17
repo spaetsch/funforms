@@ -96,15 +96,25 @@ input[type="button"] {
   max-width: 14em;
   margin-bottom: 1em;
 }
+.search-btn {
+  display: inline;
+}
+
+
+
 input[type="email"],
 input[type="text"],
 input[type="number"],
 input[type="password"],
 select {
   height: 3em;
+  margin-bottom: 1em;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"] {
   width: 100%;
   max-width: 28em;
-  margin-bottom: 1em;
 }
 textarea {
   height: 21em;
