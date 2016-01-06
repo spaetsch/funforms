@@ -21,7 +21,7 @@
 
   <section id="section1" class="stripe">
     <h1>Search</h1>
-    <p>Advanced search forms using only HTML5 attributes.</p>
+    <p>Show/hide using jQuery. HTML5 validation on search field.</p>
     <div class="group">
       <div class="col span_2_of_6"></div>
 
@@ -63,12 +63,16 @@
 
   <section id="section2" class="stripe">
     <h1>Feedback</h1>
-    <p>Feedback/survey form implemented using CSS to attach styles (:invalid pseudo-class and submitted class) and jQuery to only give feedback at submission.</p>
+    <p>Feedback/survey form implemented using font icons.</p>
     <div class="group">
       <div class="col span_2_of_6"></div>
       <form class="col span_3_of_6">
+        <label for="contactname-input">Name</label>
+        <input type="text" id="contactname" name="contactname-input" required autocomplete="off" />
+        <label for="contact-email-input">Email Address</label>
+        <input type="email" id="contact-email" name="contact-email-input" required autocomplete="off" />
 
-        <label for="survey1">Questiony question question?</label>
+        <label for="survey1">Are you satisfied with your order?</label>
         <textarea name="survey1" autocomplete="off" ></textarea>
 
         <label for="rate">Rate your service:</label>
@@ -84,7 +88,7 @@
 
   <section id="section3" class="stripe">
     <h1>Contact Us</h1>
-    <p>Contact/Tech support form providing feedback with font icons.</p>
+    <p>Contact/Tech support form implemented using CSS to attach styles (:invalid pseudo-class and submitted class) and jQuery to only give feedback at submission.</p>
     <div class="group">
       <div class="col span_2_of_6"></div>
       <form class="col span_3_of_6 contact">
