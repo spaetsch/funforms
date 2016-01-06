@@ -109,6 +109,7 @@ select:focus {
 .submitted input:invalid  {
   border: 2px solid $form-border-invalid;
   outline: 0;
+    content: "\e901";
 
  }
 

@@ -36,10 +36,13 @@ $(document).ready(function() {
     }
   });
 
+  $("form").submit(function(event){ //prevents all forms from reloading/refreshing page
+    event.preventDefault();
+  });
+
   $(".contact").submit(function(event) {
     var target = $(event.target);
     target.addClass('submitted');
-    event.preventDefault(); // to not reload page so I can see results
   });
 
   $(".searchlink").click(function(event) {
