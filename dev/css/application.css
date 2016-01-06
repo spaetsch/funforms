@@ -195,6 +195,7 @@ input[type="button"] {
 .search-btn {
   display: inline; }
 
+input[type="phone"],
 input[type="email"],
 input[type="text"],
 input[type="number"],
@@ -237,12 +238,20 @@ a,
 label,
 h3,
 h4,
+input[type="email"],
+input[type="phone"],
 input[type="text"],
+input[type="number"],
+input[type="password"],
 select {
   font-family: "Lato", Helvetica, sans-serif;
   line-height: 1.25em; }
 
+input[type="email"],
+input[type="phone"],
 input[type="text"],
+input[type="number"],
+input[type="password"],
 select,
 button {
   font-size: 1em; }
@@ -299,6 +308,7 @@ input[type="button"]:hover {
   outline: 0; }
 
 input[type="email"],
+input[type="phone"],
 input[type="text"],
 input[type="number"],
 input[type="password"],
