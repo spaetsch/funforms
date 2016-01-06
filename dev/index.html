@@ -11,7 +11,6 @@
   <a href="#menu" class="menu-link">Menu</a>
   <nav id="menu" role="navigation">
     <ul>
-      <li><a href="#home">Home</a></li>
       <li><a href="#section1">Search</a></li>
       <li><a href="#section2">Feedback</a></li>
       <li><a href="#section3">Contact</a></li>
@@ -19,12 +18,6 @@
       <li><a href="#section5">Login/Signup</a></li>
     </ul>
   </nav>
-
-  <section id="home" class="hero">
-    <h1>Fun</h1>
-    <h1>with</h1>
-    <h1>Forms</h1>
-  </section>
 
   <section id="section1" class="stripe">
     <h1>Search</h1>
@@ -36,32 +29,34 @@
 
         <label for="search">Search
           <input type="text" name="search" required autocomplete="off" />
-          <button type="submit" class="search-btn">Go!</button>
+          <button  type='button' class="search-btn">Go!</button>
         </label>
+        <p class="searchlink"><a href="">Advanced search</a></p>
 
-        <label for="location">Location:
-          <select name="miles">
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="25">25</option>
-            <option value="50">50</option>
-          </select>
-          miles from
-          <input type="text" name="location" placeholder="City, State">
-        </label>
+        <div class="advsearch">
+          <label for="location">Location:
+            <select name="miles">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+            </select>
+            miles from
+            <input type="text" name="location" placeholder="City, State">
+          </label>
 
-        <label for="avail">Available online:
-          <input type="checkbox" name="avail">
-        </label>
+          <label for="avail">Available online:
+            <input type="checkbox" name="avail">
+          </label>
 
-        <label for="lang">Language:
-          <select name="lang">
-            <option value="english">English</option>
-            <option value="spanish">Espanol</option>
-            <option value="french">Francais</option>
-          </select>
-        </label>
-
+          <label for="lang">Language:
+            <select name="lang">
+              <option value="english">English</option>
+              <option value="spanish">Espanol</option>
+              <option value="french">Francais</option>
+            </select>
+          </label>
+          <button class="search-btn">Go!</button>
       </form>
     </div>
   </section>

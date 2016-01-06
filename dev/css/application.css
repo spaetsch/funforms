@@ -123,7 +123,7 @@ h2 {
 
 .stripe {
   min-height: 45em;
-  padding: 2em 1em; }
+  padding: 3em 2em; }
 
 .vertical-ctr {
   position: absolute;
@@ -223,6 +223,11 @@ legend {
 p.forgot {
   position: relative;
   top: -0.75em; }
+
+.advsearch {
+  display: none;
+  background-color: rgba(113, 83, 103, 0.2);
+  padding: 1em; }
 
 h1, h2 {
   font-family: "Bitter", Times, serif; }

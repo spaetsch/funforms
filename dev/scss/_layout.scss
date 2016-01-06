@@ -10,7 +10,7 @@
 }
 .stripe {
   min-height: 45em;
-  padding: 2em 1em;
+  padding: 3em 2em;
 }
 
 //layout utility styles
@@ -124,4 +124,10 @@ legend {
 p.forgot {
   position: relative;
   top: -0.75em;
+}
+//
+.advsearch{
+  display: none;
+  background-color: $faded-bgdcolor1;
+  padding: 1em;
 }

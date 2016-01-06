@@ -43,6 +43,12 @@ $(document).ready(function() {
     event.preventDefault(); // to not reload page so I can see results
   });
 
+  $(".searchlink").click(function(event) {
+    event.preventDefault(); // to not reload page so I can see results
+    $(".advsearch").toggle();
+    console.log("searlink click");
+  });
+
 });
 
 
