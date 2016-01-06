@@ -36,11 +36,25 @@ $(document).ready(function() {
     }
   });
 
+  // handlers for forms
+
   $("form").submit(function(event){ //prevents all forms from reloading/refreshing page
     event.preventDefault();
   });
 
-  $(".contact").submit(function(event) {
+  $(".feed-form").submit(function(event){
+    console.log("infeedemail sad");
+
+    var target = $(event.target);
+    console.log("target", target);
+    target.addClass('submitted-icon');
+    target.append('<span class="icon-sad">moo</span>');
+
+
+  });
+
+  $(".contactform").submit(function(event) {
+    console.log("contact submit");
     var target = $(event.target);
     target.addClass('submitted');
   });

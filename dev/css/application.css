@@ -329,8 +329,12 @@ select:focus {
 
 .submitted input:invalid {
   border: 2px solid orange;
+  outline: 0; }
+
+.submitted-icon input:invalid {
+  border: 2px solid red;
   outline: 0;
-  content: "\e901"; }
+  background: no-repeat right url("https://www.fillmurray.com/50/50"); }
 
 @font-face {
   font-family: 'Quicksand';

@@ -109,8 +109,10 @@ select:focus {
 .submitted input:invalid  {
   border: 2px solid $form-border-invalid;
   outline: 0;
-    content: "\e901";
-
  }
-
-
+.submitted-icon input:invalid  {
+  border: 2px solid red;
+  outline: 0;
+  background: no-repeat right url("https://www.fillmurray.com/50/50");
+//background-image: url(https://www.fillmurray.com/50/50);
+ }
