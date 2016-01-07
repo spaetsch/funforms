@@ -113,6 +113,10 @@ select:focus {
 .submitted-icon input:invalid  {
   border: 2px solid red;
   outline: 0;
-  background: no-repeat right url("https://www.fillmurray.com/50/50");
-//background-image: url(https://www.fillmurray.com/50/50);
+  background: no-repeat right url("../../img/letterx3.png");
+ }
+ .submitted-icon input:valid  {
+  border: 2px solid green;
+  outline: 0;
+  background: no-repeat right url("../../img/check56.png");
  }
