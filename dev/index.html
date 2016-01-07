@@ -11,113 +11,16 @@
   <a href="#menu" class="menu-link">Menu</a>
   <nav id="menu" role="navigation">
     <ul>
-      <li><a href="#section1">Search</a></li>
-      <li><a href="#section2">Feedback</a></li>
-      <li><a href="#section3">Contact</a></li>
-      <li><a href="#section4">Order</a></li>
+      <li><a href="#section1">Order</a></li>
+      <li><a href="#section2">Search</a></li>
+      <li><a href="#section3">Feedback</a></li>
+      <li><a href="#section4">Contact</a></li>
       <li><a href="#section5">Login/Signup</a></li>
     </ul>
   </nav>
-
-  <section id="section1" class="stripe">
-    <h1>Search</h1>
-    <p>HTML5 form fields. Uses "required" HTML5 validation on search field. Show/hide advanced search options using jQuery.</p>
-    <div class="group">
-      <div class="col span_2_of_6"></div>
-      <form class="col span_3_of_6">
-        <label for="search">Search
-          <input type="text" name="search" required autocomplete="off" />
-          <button class="search-btn">Go!</button>
-        </label>
-        <p class="searchlink"><a href="">Advanced search</a></p>
-        <div class="advsearch">
-          <label for="search-location">Location:
-            <select name="search-miles">
-              <option value="5">5</option>
-              <option value="10">10</option>
-              <option value="25">25</option>
-              <option value="50">50</option>
-            </select>
-            miles from
-            <input type="text" name="search-location" placeholder="City, State">
-          </label>
-
-          <label for="search-avail">Available online:
-            <input type="checkbox" name="avail">
-          </label>
-
-          <label for="search-lang">Language:
-            <select name="lang">
-              <option value="english">English</option>
-              <option value="spanish">Espanol</option>
-              <option value="french">Francais</option>
-            </select>
-          </label>
-          <button class="search-btn">Go!</button>
-      </form>
-    </div>
-  </section>
-
-  <section id="section2" class="stripe">
-    <h1>Feedback</h1>
-    <p>Feedback/survey form implemented using jQuery to attach CSS styles, using ":invalid" pseudo-class and a custom "submitted" class. Using jQuery prevents the page from giving feedback until after the first time the user submits the form, while using CSS pseudo-classes means it will instantly update feedback as soon as input is changed. CSS styles use colors and icons to signal validity of input.</p>
-    <div>
-      <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
-    </div>
-
-    <div class="group">
-      <div class="col span_2_of_6"></div>
-      <form class="col span_3_of_6 feed-form">
-
-        <label for="feed-name-input">Name</label>
-        <input type="text" id="feed-name" name="feed-name-input" required autocomplete="off" />
-
-        <label for="feed-email-input">Email Address</label>
-        <input type="email" id="feed-email" name="feed-email-input" required autocomplete="off" />
-
-        <label for="feed-survey1">Are you satisfied with your order?</label>
-        <textarea name="feed-survey1" autocomplete="off" ></textarea>
-
-        <label for="feed-rate">Rate your service:</label>
-        <input type="range" name="feed-rate" step="1" min="1" max="5">
-
-        <label for="feed-moreinfo">Anything else you'd like us to know:</label>
-        <textarea name="feed-moreinfo" required autocomplete="off" ></textarea>
-        <button formnovalidate type="submit" id="feed-btn">Submit</button>
-      </form>
-
-    </div>
-  </section>
-
-  <section id="section3" class="stripe">
-    <h1>Contact Us</h1>
-    <p>REDUNDANT NOW Contact/Tech support form implemented using CSS to attach styles (:invalid pseudo-class and submitted class) and jQuery to only give feedback at submission.</p>
-    <div class="group">
-      <div class="col span_2_of_6"></div>
-      <form class="col span_3_of_6 contactform">
-        <label for="contactname-input">Name</label>
-        <input type="text" id="contactname" name="contactname-input" required autocomplete="off" />
-        <label for="contact-email-input">Email Address</label>
-        <input type="email" id="contact-email" name="contact-email-input" required autocomplete="off" />
-        <label for="subject">Subject:</label>
-        <select name="subject">
-          <option value="password">Password</option>
-          <option value="lost">Lost package</option>
-          <option value="creditcard">Credit Card difficulties</option>
-          <option value="hats">Hats</option>
-        </select>
-
-        <label for="contact-msg-input">Your Message</label>
-        <textarea id="contact-msg" name="contact-msg-input" required autocomplete="off" ></textarea>
-        <button formnovalidate type="submit" id="contact-button">Send Message</button>
-      </form>
-
-    </div>
-  </section>
-
-  <section id="section4" class="stripe">
+<section id="section1" class="stripe">
     <h1>Order Form</h1>
-    <p>Order form that animates fields with invalid input.</p>
+    <p>Order form demo HTML5 presets stuff</p>
 
     <div class="col span_1_of_6"></div>
     <form class="col span_2_of_6">
@@ -209,6 +112,103 @@
       <button formnovalidate type="submit" id="order-button">Place Order</button>
     </form>
     </section>
+  <section id="section2" class="stripe">
+    <h1>Search</h1>
+    <p>HTML5 form fields. Uses "required" HTML5 validation on search field. Show/hide advanced search options using jQuery.</p>
+    <div class="group">
+      <div class="col span_2_of_6"></div>
+      <form class="col span_3_of_6">
+        <label for="search">Search
+          <input type="text" name="search" required autocomplete="off" />
+          <button class="search-btn">Go!</button>
+        </label>
+        <p class="searchlink"><a href="">Advanced search</a></p>
+        <div class="advsearch">
+          <label for="search-location">Location:
+            <select name="search-miles">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+            </select>
+            miles from
+            <input type="text" name="search-location" placeholder="City, State">
+          </label>
+
+          <label for="search-avail">Available online:
+            <input type="checkbox" name="avail">
+          </label>
+
+          <label for="search-lang">Language:
+            <select name="lang">
+              <option value="english">English</option>
+              <option value="spanish">Espanol</option>
+              <option value="french">Francais</option>
+            </select>
+          </label>
+          <button class="search-btn">Go!</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="section3" class="stripe">
+    <h1>Feedback</h1>
+    <p>Feedback/survey form implemented using jQuery to attach CSS styles, using ":invalid" pseudo-class and a custom "submitted" class. Using jQuery prevents the page from giving feedback until after the first time the user submits the form, while using CSS pseudo-classes means it will instantly update feedback as soon as input is changed. CSS styles use colors and icons to signal validity of input.</p>
+    <div>
+      <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+    </div>
+
+    <div class="group">
+      <div class="col span_2_of_6"></div>
+      <form class="col span_3_of_6 feed-form">
+
+        <label for="feed-name-input">Name</label>
+        <input type="text" id="feed-name" name="feed-name-input" required autocomplete="off" />
+
+        <label for="feed-email-input">Email Address</label>
+        <input type="email" id="feed-email" name="feed-email-input" required autocomplete="off" />
+
+        <label for="feed-survey1">Are you satisfied with your order?</label>
+        <textarea name="feed-survey1" autocomplete="off" ></textarea>
+
+        <label for="feed-rate">Rate your service:</label>
+        <input type="range" name="feed-rate" step="1" min="1" max="5">
+
+        <label for="feed-moreinfo">Anything else you'd like us to know:</label>
+        <textarea name="feed-moreinfo" required autocomplete="off" ></textarea>
+        <button formnovalidate type="submit" id="feed-btn">Submit</button>
+      </form>
+
+    </div>
+  </section>
+
+  <section id="section4" class="stripe">
+    <h1>Contact Us</h1>
+    <p>Put animation here.</p>
+    <div class="group">
+      <div class="col span_2_of_6"></div>
+      <form class="col span_3_of_6 contactform">
+        <label for="contactname-input">Name</label>
+        <input type="text" id="contactname" name="contactname-input" required autocomplete="off" />
+        <label for="contact-email-input">Email Address</label>
+        <input type="email" id="contact-email" name="contact-email-input" required autocomplete="off" />
+        <label for="subject">Subject:</label>
+        <select name="subject">
+          <option value="password">Password</option>
+          <option value="lost">Lost package</option>
+          <option value="creditcard">Credit Card difficulties</option>
+          <option value="hats">Hats</option>
+        </select>
+
+        <label for="contact-msg-input">Your Message</label>
+        <textarea id="contact-msg" name="contact-msg-input" required autocomplete="off" ></textarea>
+        <button formnovalidate type="submit" id="contact-button">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+
+
 
   <section id="section5" class="stripe">
     <h1>Login / Signup</h1>
