@@ -122,7 +122,7 @@ h2 {
       height: 60em; } }
 
 .stripe {
-  min-height: 45em;
+  min-height: 40em;
   padding: 4em 3em; }
 
 .vertical-ctr {
@@ -211,7 +211,7 @@ input[type="password"] {
   max-width: 28em; }
 
 textarea {
-  height: 21em;
+  height: 5em;
   width: 100%;
   max-width: 50em;
   margin-bottom: 1em; }
@@ -247,13 +247,18 @@ select {
   font-family: "Lato", Helvetica, sans-serif;
   line-height: 1.25em; }
 
+textarea {
+  font-family: "Lato", Helvetica, sans-serif;
+  line-height: 1.5em; }
+
 input[type="email"],
 input[type="phone"],
 input[type="text"],
 input[type="number"],
 input[type="password"],
 select,
-button {
+button,
+textarea {
   font-size: 1em; }
 
 .hero {

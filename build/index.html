@@ -199,27 +199,12 @@
       <label for="sec">Security Code:</label>
       <input id="sec" type="text" value = "" pattern="\d{3}">
 
-
       <fieldset class="radiogroup">
         <legend>Select shipping:</legend>
-        <ul class="radio">
-          <li>
-            <input type="radio" name="ship" id="ship1" value="USPS" />
-            <label for="ship1">USPS</label>
-          </li>
-          <li>
-            <input type="radio" name="ship" id="ship2" value="UPS" />
-            <label for="ship2">UPS</label>
-          </li>
-          <li>
-            <input type="radio" name="ship" id="ship3" value="FedEx" />
-            <label for="ship3">FedEx</label>
-          </li>
-          <li>
-            <input type="radio" name="ship" id="ship4" value="DHL" />
-            <label for="ship4">DHL</label>
-          </li>
-        </ul>
+        <input type="radio" name="ship" id="ship1" value="USPS" />USPS
+        <input type="radio" name="ship" id="ship2" value="UPS" />UPS
+        <input type="radio" name="ship" id="ship3" value="FedEx" />FedEx
+        <input type="radio" name="ship" id="ship4" value="DHL" />DHL
       </fieldset>
       <button formnovalidate type="submit" id="order-button">Place Order</button>
     </form>
