@@ -21,35 +21,32 @@
 
   <section id="section1" class="stripe">
     <h1>Search</h1>
-    <p>Show/hide using jQuery. HTML5 validation on search field.</p>
+    <p>HTML5 form fields. Uses "required" HTML5 validation on search field. Show/hide advanced search options using jQuery.</p>
     <div class="group">
       <div class="col span_2_of_6"></div>
-
       <form class="col span_3_of_6">
-
         <label for="search">Search
           <input type="text" name="search" required autocomplete="off" />
           <button class="search-btn">Go!</button>
         </label>
         <p class="searchlink"><a href="">Advanced search</a></p>
-
         <div class="advsearch">
-          <label for="location">Location:
-            <select name="miles">
+          <label for="search-location">Location:
+            <select name="search-miles">
               <option value="5">5</option>
               <option value="10">10</option>
               <option value="25">25</option>
               <option value="50">50</option>
             </select>
             miles from
-            <input type="text" name="location" placeholder="City, State">
+            <input type="text" name="search-location" placeholder="City, State">
           </label>
 
-          <label for="avail">Available online:
+          <label for="search-avail">Available online:
             <input type="checkbox" name="avail">
           </label>
 
-          <label for="lang">Language:
+          <label for="search-lang">Language:
             <select name="lang">
               <option value="english">English</option>
               <option value="spanish">Espanol</option>
@@ -63,8 +60,10 @@
 
   <section id="section2" class="stripe">
     <h1>Feedback</h1>
-    <p>Feedback/survey form implemented using font icons.</p>
-    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+    <p>Feedback/survey form implemented using jQuery to attach CSS styles, using ":invalid" pseudo-class and a custom "submitted" class. Using jQuery prevents the page from giving feedback until after the first time the user submits the form, while using CSS pseudo-classes means it will instantly update feedback as soon as input is changed. CSS styles use colors and icons to signal validity of input.</p>
+    <div>
+      <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+    </div>
 
     <div class="group">
       <div class="col span_2_of_6"></div>
@@ -92,7 +91,7 @@
 
   <section id="section3" class="stripe">
     <h1>Contact Us</h1>
-    <p>Contact/Tech support form implemented using CSS to attach styles (:invalid pseudo-class and submitted class) and jQuery to only give feedback at submission.</p>
+    <p>REDUNDANT NOW Contact/Tech support form implemented using CSS to attach styles (:invalid pseudo-class and submitted class) and jQuery to only give feedback at submission.</p>
     <div class="group">
       <div class="col span_2_of_6"></div>
       <form class="col span_3_of_6 contactform">

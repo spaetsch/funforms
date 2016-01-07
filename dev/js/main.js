@@ -43,24 +43,18 @@ $(document).ready(function() {
   });
 
   $(".feed-form").submit(function(event){
-    console.log("infeedemail sad");
-
     var target = $(event.target);
-    console.log("target", target);
     target.addClass('submitted-icon');
-    target.append('<span class="icon-sad">moo</span>');
-
 
   });
 
   $(".contactform").submit(function(event) {
-    console.log("contact submit");
     var target = $(event.target);
     target.addClass('submitted');
   });
 
   $(".searchlink").click(function(event) {
-    event.preventDefault(); // to not reload page so I can see results
+    event.preventDefault(); // prevents from reloading page
     $(".advsearch").toggle();
   });
 
